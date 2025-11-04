@@ -1,0 +1,16 @@
+<form class="p-4" style="max-width: 600px; margin: auto;" (ngSubmit)="onSubmit()">
+  <!-- Title Input -->
+  <div class="mb-3">
+    <label for="titleInput" class="form-label fw-bold">Title</label>
+    <input type="text" [(ngModel)]="title" name="title" class="form-control" id="title" placeholder="Enter title">
+  </div>
+
+  <!-- Description Input (Smaller Size) -->
+  <div class="mb-3" style="max-width: 400px;"> 
+    <label for="descriptionInput" class="form-label fw-bold">Description</label>
+    <textarea class="form-control" [(ngModel)]="desc" name="desc" id="desc" rows="3" placeholder="Enter description"></textarea>
+  </div>
+
+  <!-- Submit Button -->
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
