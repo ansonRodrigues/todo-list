@@ -1,5 +1,14 @@
-<div>
-    <h4>{{todo.title}}</h4>
-    <p>{{todo.desc}}</p>
-    <button type="button" class="btn btn-danger" (click)="onClick(todo)">Delete</button>
+<div class="todo-card shadow-sm rounded-4 p-3 mb-3 bg-white border">
+  <div class="d-flex justify-content-between align-items-start">
+    <div>
+      <h5 class="fw-semibold text-primary mb-1">{{ todo.title }}</h5>
+      <p class="text-muted mb-2">{{ todo.desc }}</p>
+    </div>
+    <button 
+      type="button" 
+      class="btn btn-outline-danger btn-sm rounded-pill px-3"
+      (click)="onClick(todo)">
+      Delete
+    </button>
+  </div>
 </div>

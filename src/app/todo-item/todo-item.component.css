@@ -1,0 +1,27 @@
+.todo-card {
+  transition: all 0.25s ease;
+}
+
+.todo-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.todo-card h5 {
+  font-size: 1.1rem;
+  letter-spacing: 0.3px;
+}
+
+.todo-card p {
+  font-size: 0.95rem;
+}
+
+.btn-outline-danger {
+  border-width: 1.5px;
+  font-weight: 500;
+}
+
+.btn-outline-danger:hover {
+  background-color: #dc3545;
+  color: white;
+}

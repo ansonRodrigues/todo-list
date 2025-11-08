@@ -1,0 +1,17 @@
+.todo-wrapper {
+  background: #f8faff;
+  min-height: 100vh;
+  padding-bottom: 60px;
+}
+
+.text-muted h5 {
+  font-size: 1.2rem;
+}
+
+.text-center {
+  line-height: 1.5;
+}
+
+.text-secondary {
+  font-size: 0.95rem;
+}

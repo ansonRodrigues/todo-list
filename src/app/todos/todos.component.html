@@ -1,7 +1,25 @@
-<app-add-todo (todoAdd)="addTodo($event)"></app-add-todo>
-<div *ngIf="this.todos.length===0; else elseBlock">No Todos</div>
-<ng-template #elseBlock>
-   <div *ngFor="let todo of todos">
-      <app-todo-item [todo]="todo" (todoDelete)="deleteTodo($event)"></app-todo-item>
-   </div>
-</ng-template>
+<div class="todo-wrapper container py-4">
+
+  <!-- Add Todo Section -->
+  <div class="mb-4">
+    <app-add-todo (todoAdd)="addTodo($event)"></app-add-todo>
+  </div>
+
+  <!-- No Todos Message -->
+  <div *ngIf="todos.length === 0; else todoList" class="text-center text-muted mt-5">
+    <h5 class="fw-semibold mb-1">You're all caught up! 🎉</h5>
+    <p class="text-secondary mb-0">Add a new task to get started.</p>
+  </div>
+
+  <!-- Todo List -->
+  <ng-template #todoList>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div *ngFor="let todo of todos" class="mb-3">
+          <app-todo-item [todo]="todo" (todoDelete)="deleteTodo($event)"></app-todo-item>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+
+</div>

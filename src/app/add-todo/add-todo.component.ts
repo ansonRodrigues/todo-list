@@ -23,6 +23,10 @@ export class AddTodoComponent {
 
     }
     this.todoAdd.emit(todo)
+
+    this.title = ''
+    this.desc = ''
+    
   }
 
 
